@@ -9,6 +9,8 @@ import 'angular-material/angular-material.css';
 import './index.scss';
 
 import AppComponent from './app.component';
+import NotificationService from './services/NotificationService';
+import StoreService from './services/StoreService';
 // import routes from './index.route';
 
 angular.module('main', [
@@ -17,6 +19,9 @@ angular.module('main', [
   materialIcon,
   ngAnimate,
 ])
+  .service('NotificationService', NotificationService)
+  .service('StoreService', StoreService)
   .component('app', AppComponent)
+
   // .config(['$stateProvider', routes])
   .run();

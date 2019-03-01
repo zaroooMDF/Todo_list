@@ -11,4 +11,49 @@ app {
     font-weight: 300;
     color: #253035;
   }
+  .container {
+    width:40%;
+    margin: 0 auto;
+  }
+  .header {
+    margin: 0;
+    padding: 30px;
+    text-align: center;
+  }
+  .header h1 {
+    font-size: 48px;
+  }
+  .header input {
+    width: 60%;
+    height: 30px;
+    margin-top: 3px;
+  }
+  .header .md-raised {
+    width: 15%;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  md-list-item-text {
+    width: 100%;
+  }
+  .md-fab {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 20%;
+  }
+  #notification-message {
+    position: fixed;
+    right: 2%;
+    top: 2%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    color: black;
+    font-size: 18px;
+    padding: 5px;
+    display: none;
+    text-align: center;
+  }
 }

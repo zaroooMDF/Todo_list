@@ -1,2 +1,21 @@
-Test
-<!-- <div class="view-container" ui-view></div> -->
+<div class="container">
+  <header class="header">
+    <h1>Bratan Todo's</h1>
+    <input class="new-todo" placeholder="What bratan needs to do?" ng-model='$ctrl.title'>
+    <md-button class="add-button md-raised" ng-click="$ctrl.addToDo()">Add</md-button>
+  </header>
+  <div class="list">
+    <md-list flex>
+      <md-subheader class="md-no-sticky">Tasks ToDo (Faster is Better)</md-subheader>
+      <md-list-item class="md-3-line" ng-repeat="task in $ctrl.tasks track by $index">
+        <div class="md-list-item-text" layout="column">
+          <h2>{{ task.todo }}<md-button class="md-fab md-mini" aria-label="Eat cake" ng-click="$ctrl.deleteToDo($index)">X</md-button></h2>
+        </div>
+        <md-divider ></md-divider>
+      </md-list-item>
+    </md-list>
+    </div>
+</div>
+<div id="notification-message"></div>
+
+
